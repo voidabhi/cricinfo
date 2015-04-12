@@ -1,4 +1,4 @@
 Cricinfo
 ========
 
-Unofficial python api for avid cricket fans.
+Python wrapper over cricinfo rss feeds.
