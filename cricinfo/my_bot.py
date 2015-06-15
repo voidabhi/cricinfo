@@ -8,4 +8,5 @@ soup = BeautifulSoup(r.text)
 matches = soup.find_all('title')
 
 for match in matches:
-	print match.contents
+	print match.contents['title']
+	print match.contents['description']
