@@ -10,3 +10,4 @@ matches = soup.find_all('item')
 for match in matches:
 	print match.contents['title']
 	print match.contents['description']
+	print match.contents['link']
