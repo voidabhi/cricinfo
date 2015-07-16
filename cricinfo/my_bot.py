@@ -3,7 +3,9 @@
 import requests
 from bs4 import BeautifulSoup
 
-r = requests.get('http://static.cricinfo.com/rss/livescores.xml')
+CRICINFO_RSS_URL = 'http://static.cricinfo.com/rss/livescores.xml'
+
+r = requests.get(CRICINFO_RSS_URL)
 soup = BeautifulSoup(r.text)
 matches = soup.find_all('item')
 
