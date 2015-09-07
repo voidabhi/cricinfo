@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 
 CRICINFO_RSS_URL = 'http://static.cricinfo.com/rss/livescores.xml'
 
+# Fetching matches
 def get_matches():
 	r = requests.get(CRICINFO_RSS_URL)
 	soup = BeautifulSoup(r.text)
