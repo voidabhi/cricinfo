@@ -24,12 +24,11 @@ class Match(object):
 		return self.title
 
 def get_matches():
-	"""Fetches matches from the cricinfo url"""
-	
-	r = requests.get(CRICINFO_RSS_URL)
-	soup = BeautifulSoup(r.text)
-	for match in soup.find_all('item'):
-		yield Match.from_xml(str(match))
+   """Fetches matches from the cricinfo url"""
+   r = requests.get(CRICINFO_RSS_URL)
+   soup = BeautifulSoup(r.text)
+   for match in soup.find_all('item'):
+	yield Match.from_xml(str(match))
 	
 def print_posts(matches):
   """Prints all matches to the console."""
