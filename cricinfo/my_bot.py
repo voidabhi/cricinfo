@@ -25,6 +25,9 @@ class Match(object):
 
 def get_matches():
    """Fetches matches from the cricinfo url"""
+   
+   global CRICINFO_RSS_URL
+   
    r = requests.get(CRICINFO_RSS_URL)
    soup = BeautifulSoup(r.text)
    for match in soup.find_all('item'):
