@@ -1,7 +1,7 @@
 Cricinfo
 ========
 
-Command line utility for cricinfo feeds
+Command line utility for [cricinfo](http://cricinfo.com) feeds
 
 Usage
 =====
