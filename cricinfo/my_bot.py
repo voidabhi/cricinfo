@@ -15,8 +15,8 @@ class Match(object):
 		self.description = description
 		self.guid = guid
 	
-	@staticmethod
-	def from_xml(xml):
+	@classmethod
+	def from_xml(self, xml):
 		item = xmltodict.parse(xml)['item']
 		return Match(item['title'], item['link'], item['description'], item['guid'])
 		
