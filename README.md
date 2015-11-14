@@ -15,7 +15,8 @@ $ cricinfo
 LICENSE
 =======
 
-```The MIT License (MIT)
+```
+The MIT License (MIT)
 
 Copyright (c) 2014 Abhijeet Mohan
 
