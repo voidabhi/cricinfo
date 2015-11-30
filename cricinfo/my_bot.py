@@ -21,7 +21,7 @@ class Match(object):
 		return Match(item['title'], item['link'], item['description'], item['guid'])
 		
 	def __repr__(self):
-		return self.title
+		return '<Match=%s>'%self.title
 
 def get_matches():
    """Fetches matches from the cricinfo url"""
