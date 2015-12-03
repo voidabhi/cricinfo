@@ -33,7 +33,7 @@ def get_matches():
    for match in soup.find_all('item'):
 	yield Match.from_xml(str(match))
 	
-def print_posts(matches):
+def print_matches(matches):
   """Prints all matches to the console."""
 
   click.echo()
@@ -48,7 +48,7 @@ def main():
   # fetch matches
   matches = get_matches()
   # print matches
-  print_posts(matches)
+  print_matches(matches)
 
 if __name__ == '__main__':
   main()
