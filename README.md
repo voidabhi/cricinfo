@@ -3,8 +3,7 @@ Cricinfo
 
 Command line utility for [cricinfo](http://cricinfo.com) live feeds
 
-Usage
-=====
+### Usage
 
 ```bash
 $ cricinfo
@@ -12,8 +11,7 @@ $ cricinfo
 
 
 
-LICENSE
-=======
+### LICENSE
 
 ```
 The MIT License (MIT)
