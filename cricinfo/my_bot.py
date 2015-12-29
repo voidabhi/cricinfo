@@ -5,7 +5,14 @@ from bs4 import BeautifulSoup
 import xmltodict
 import click
 
-CRICINFO_RSS_URL = 'http://static.cricinfo.com/rss/livescores.xml'
+from ConfigParser import SafeConfigParser
+
+parser = SafeConfigParser()
+parser.read('.config')
+
+
+
+CRICINFO_RSS_URL = parser.get('url')
 
 class Match(object):
 
