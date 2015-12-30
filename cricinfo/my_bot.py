@@ -10,10 +10,6 @@ from ConfigParser import SafeConfigParser
 parser = SafeConfigParser()
 parser.read('.config')
 
-
-
-CRICINFO_RSS_URL = parser.get('url')
-
 class Match(object):
 
 	def __init__(self, title, link, description, guid):
@@ -32,10 +28,8 @@ class Match(object):
 
 def get_matches():
    """Fetches matches from the cricinfo url"""
-   
-   global CRICINFO_RSS_URL
-   
-   r = requests.get(CRICINFO_RSS_URL)
+
+   r = requests.get(parser.get('url'))
    soup = BeautifulSoup(r.text)
    for match in soup.find_all('item'):
 	yield Match.from_xml(str(match))
