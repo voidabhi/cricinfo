@@ -1,5 +1,4 @@
-Cricinfo
-========
+## Cricinfo
 
 Command line utility for [cricinfo](http://cricinfo.com) live feeds
 
