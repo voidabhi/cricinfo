@@ -7,8 +7,11 @@ import click
 
 from ConfigParser import SafeConfigParser
 
-parser = SafeConfigParser()
-parser.read('.config')
+
+def get_config(key):
+	parser = SafeConfigParser()
+	parser.read('.config')
+	return parser.get(key)
 
 class Match(object):
 
