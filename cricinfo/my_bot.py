@@ -14,7 +14,8 @@ def get_config(key):
 	return parser.get(key)
 
 class Match(object):
-
+	""" Represents a cricinfo match """
+	
 	def __init__(self, title, link, description, guid):
 		self.title = title
 		self.link = link
