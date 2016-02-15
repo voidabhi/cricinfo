@@ -9,6 +9,7 @@ from ConfigParser import SafeConfigParser
 
 
 def get_config(key):
+	""" Fetch config from config file """
 	parser = SafeConfigParser()
 	parser.read('.config')
 	return parser.get(key)
