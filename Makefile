@@ -8,11 +8,7 @@ clean:
 
 copy:
     mkdir dist
-    cp -R bingo dist
-    cp -R .crossbar dist
-    cp requirements.txt dist
-    cp crossbar-keyfile dist
-    cp Makefile dist
+    cp -R cricinfo dist
 
 tar:
     tar -zc dist/ | gzip > dist.tar.gz
