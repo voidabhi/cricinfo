@@ -1,2 +1,3 @@
 
 # build script
+make install
