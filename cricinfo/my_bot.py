@@ -25,6 +25,7 @@ class Match(object):
   
   @classmethod
   def from_xml(self, xml):
+      """ create object from serialized xml """
       item = xmltodict.parse(xml)['item']
       return Match(item['title'], item['link'], item['description'], item['guid'])
       
