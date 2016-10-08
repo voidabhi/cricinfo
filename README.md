@@ -14,6 +14,18 @@ make build
 $ cricinfo
 ```
 
+**As Library**
+
+```python
+  from cricinfo import get_matches
+  
+  if __name__=='__main__':
+    # fetch matches
+    matches = get_matches()
+    # print matches
+    print_matches(matches)
+```
+
 
 
 ### LICENSE
