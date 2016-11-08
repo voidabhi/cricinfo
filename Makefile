@@ -11,6 +11,7 @@ requirements:
 
 copy:
     mkdir dist
+    cp .config dist
     cp -R cricinfo dist
     cp -R requirements.txt dist
 
