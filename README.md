@@ -23,7 +23,7 @@ $ cricinfo
     # fetch matches
     matches = get_matches()
     # print matches
-    print_matches(matches)
+    print(matches)
 ```
 
 
