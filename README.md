@@ -5,6 +5,7 @@ Command line utility for [cricinfo](http://cricinfo.com) live feeds
 ### Build
 
 ```bash
+pip install -r requirements.txt
 make build
 ```
 
